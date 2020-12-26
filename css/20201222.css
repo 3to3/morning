@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* body設定*/
+body {
+    box-sizing: border-box;
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: #0083ae;
+}
+
+/* 一番上 */
+.top {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.today {
+    width: 50%;
+    position: relative;
+    padding: 50px;
+    border: 1px solid #9fd8ee;
+    border-radius: 60px;
+}
+.today:before, .today:after{ 
+    position: absolute;
+    top: 0;
+    content:'';
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+.today:before{
+    left:0;
+    border: 1px solid #59c2e1;
+    transform: rotate(-0.8deg);
+}
+.today:after{
+    left:0;
+    border: 1px solid #00a4d4;
+    transform: rotate(0.8deg);
+}
+.today p {
+    font-size: 32px;
+    color: #0083a8;
+}
+
+
+/* sticky軍団 */
+.box {
+    max-width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.box p {
+    display: inline-block;
+    font-size: 100px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #f9f8f9;
+}
+
+.box3 {
+    background: #9fd8ee;
+    z-index: 100;
+}
+
+.box2 {
+    background: #59c2e1;
+    z-index: 200;
+}
+.box2::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(45deg,#59c2e1 50%,transparent 50%),
+    linear-gradient(315deg,#59c2e1 50%,transparent 50%);
+    background-size: 100px 100px;
+}
+
+.box1 {
+    max-width: 100%;
+    background: #00a4d4;
+    z-index: 300;
+}
+.box1::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: 
+    linear-gradient(45deg,#00a4d4 50%,transparent 50%),
+    linear-gradient(315deg,#00a4d4 50%,transparent 50%);
+    background-size: 80px 80px;
+}
+
+/* タイピングアニメーション */
+.deden {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #0083a8;
+    color: #f9f8f9;
+    z-index: 400;
+}
+.deden::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(45deg,#0083a8 50%,transparent 50%),
+    linear-gradient(315deg,#0083a8 50%,transparent 50%);
+    background-size: 40px 40px;
+}
+
+.start {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    background: #f9f8f9;
+    border: 1px solid #0083a8;
+    color: #0083a8;
+    font-size: 14px;
+    -webkit-appearance: none;
+}
+
+.start:hover {
+    background: #0083a8;
+    border: 1px solid #f9f8f9;
+    color: #f9f8f9;
+}
+
+.start:focus {
+    outline: none;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+
+/* タイピング文字 */
+.typing {
+    font-size: 50px;
+}
+
+/* カーソルの設定 */
+.ityped-cursor {
+    font-size: 50px;
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+    color: #f9f8f9;
+}
+
+@keyframes blink {
+100% {
+    opacity: 0;
+}
+}
+@-webkit-keyframes blink {
+100% { 
+    opacity: 0;
+}
+}
+@-moz-keyframes blink {
+100% {
+    opacity: 0;
+}
+}
