@@ -9,7 +9,7 @@ body {
 /* sticky軍団 */
 .box {
     max-width: 100%;
-    height: 300px;
+    height: 50vh;
     display: flex;
     padding: 0 20px;
     align-items: center;
@@ -77,13 +77,13 @@ body {
 .deden::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -30px;
     left: 0;
     width: 100%;
-    height: 20px;
+    height: 30px;
     background: linear-gradient(45deg,#0083a8 50%,transparent 50%),
     linear-gradient(315deg,#0083a8 50%,transparent 50%);
-    background-size: 40px 40px;
+    background-size: 60px 60px;
 }
 
 .start {
