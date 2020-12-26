@@ -2,11 +2,11 @@ let checked = false;
 function typing() {
     if (checked === false) {
         ityped.init(document.querySelector("#ityped"), {
-            strings: ['KinKi Kids「O album」2020.12.23 On Sale！'],
+            strings: ['よいお年を！','来年もよろしくお願いします！'],
             startDelay: 500,
             typeSpeed: 200,
             backSpeed: 100,
-            loop: true,
+            loop: false,
             showCursor: true,
             cursorChar: "|",
         });
