@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>あわのさと</title>
+    <!-- stylesheet -->
+    <link href="css/reset.css" rel="stylesheet" media="all">
+    <link href="css/common.css" rel="stylesheet" media="all">
+    <link href="css/top.css" rel="stylesheet" media="all">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner flex">
+            <h1 class="header-logo"><a href="#hero"><span class="sitelogo">SATOMI</span></a></h1>
+            <!-- モバイル用ナビ -->
+            <nav class="gnav--mb">
+                <ul class="flex">
+                    <li class="gnav-item home"><a href="index.html"><span class="nomal">TOP</span>
+                            <span class="hover"><i class="fas fa-home"></i></span></a></li>
+                    <li class="gnav-item about"><a href="#about"><span class="nomal">ABOUT ME</span>
+                            <span class="hover">自己紹介</span></a></li>
+                    <li class="gnav-item portfolio"><a href="#portfolio"><span class="nomal">PORTFOLIO</span>
+                            <span class="hover">作品紹介</span></a></li>
+                    <li class="gnav-item skills"><a href="#skills"><span class="nomal">SKILLS</span>
+                            <span class="hover">スキル</span></a></li>
+                    <li class="gnav-item contact"><a href="#contact"><span class="nomal">CONTACT</span>
+                            <span class="hover">お問い合わせ</span></a></li>
+                </ul>
+            </nav>
+            <!-- モバイル用ナビ end -->
+            <!-- PC用グローバルナビ -->
+            <nav class="gnav--pc">
+                <ul class="flex">
+                    <li class="gnav-item home"><a href="#hero" id="top-link-js" class="current"><span class="nomal">TOP</span>
+                            <span class="hover"><i class="fas fa-home"></i></span></a></li>
+                    <li class="gnav-item about"><a href="#about" id="about-link-js"><span class="nomal">ABOUT ME</span>
+                            <span class="hover">自己紹介</span></a></li>
+                    <li class="gnav-item portfolio"><a href="#portfolio" id="portfolio-link-js"><span class="nomal">PORTFOLIO</span>
+                            <span class="hover">作品紹介</span></a></li>
+                    <li class="gnav-item skills"><a href="#skills" id="skills-link-js"><span class="nomal">SKILLS</span>
+                            <span class="hover">スキル</span></a></li>
+                    <li class="gnav-item contact"><a href="#contact" id="contact-link-js"><span class="nomal">CONTACT</span>
+                            <span class="hover">お問い合わせ</span></a></li>
+                </ul>
+            </nav><!-- PC用グローバルナビ end -->
+        </div>
+        <div id="hero" class="header-hero now"><img src="#" alt="画像" class="hero-img"></div>
+    </header><!-- header end -->
+    <main class="main">
+        <section id="about" class="contents about">
+            <h2 class="heading now">ABOUT ME<br>自己紹介</h2>
+
+        </section><!-- aboutme end -->
+        <section id="portfolio" class="contents portfolio">
+            <h2 class="heading now">PORTFOLIO<br>作品紹介</h2>
+
+        </section><!-- Portfolio end -->
+        <section id="skills" class="contents skills">
+            <h2 class="heading now">SKILLS<br>スキル</h2>
+            <ul class="skills-list flex">
+                <li class="skill flex">
+                    <div class="skill-title">HTML5</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">CSS3</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">JavaScript</div>
+                    <div class="skill-star"><span class="star star2-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">WordPress</div>
+                    <div class="skill-star"><span class="star star0"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">illustrator</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">Photoshop</div>
+                    <div class="skill-star"><span class="star star3"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">XD</div>
+                    <div class="skill-star"><span class="star star3"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">Word</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">Excel</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+                <li class="skill flex">
+                    <div class="skill-title">PowerPoint</div>
+                    <div class="skill-star"><span class="star star3-5"></span></div>
+                </li>
+            </ul>
+        </section><!-- Skill end -->
+        <section id="contact" class="contents contact">
+            <h2 class="heading now">CONTACT<br>お問い合わせ</h2>
+            <p class="contact-text">3日以上経過しても返信がない場合は、おそれいりますが再度送信をお願いいたします。</p>
+            <form class="contact-form">
+                <p>お名前<span class="marker">必須</span></p>
+                <input type="text" name="name" required>
+                <p>メールアドレス<span class="marker">必須</span></p>
+                <input type="email" name="email" required>
+                <p>本文<span class="marker">必須</span></p>
+                <textarea name="message" required></textarea>
+                <div class="contact-buttons">
+                    <input type="reset" value="クリア">
+                    <input type="submit" value="送信">
+                </div>
+            </form>
+
+        </section><!-- Contact end -->
+    </main><!-- main end -->
+    <footer class="footer flex">
+        <small class="copyright">© 2021 <span class="sitelogo">SATOMI</span></small>
+    </footer><!-- footer end -->
+    <!-- TOPへもどるボタン -->
+    <div id="pagetop"><a href="#hero"><img src="#" alt="TOPへもどる"></a></div>
+    <!-- jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <!-- slick -->
+    <script src="slick/slick.min.js"></script>
+    <script src="slick/slick.js"></script>
+</body>
+</html>

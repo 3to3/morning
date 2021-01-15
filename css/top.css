@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* hero */
+.header-hero {
+    top: 60px;
+    height: 100vh;
+}
+
+/* ABOUT ME */
+
+
+/* PORTFOLIO */
+
+
+/* SKILLS */
+.skills-list {
+    width: 100%;
+    margin: 30px auto;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width:768px) {
+    .skills-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.skill {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .skill {
+        width: 47%;
+        margin: 10px;
+    }
+}
+
+/* skill-title */
+.skill-title {
+    width: 30%;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: #379da8;
+}
+
+@media (min-width:768px) {
+.skill-title {
+    width: 50%;
+    font-size: 3rem;
+    line-height: 2;
+    }
+}
+
+/* star */
+.star {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    width: 80px;
+    height: 1.6rem;
+    font-size: 1.6rem;
+}
+.star::before, .star::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "★★★★★";
+    display: inline-block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+}
+.star::before {
+    color: #555555;
+    opacity: 0.5;
+}
+.star::after {
+    color: #e7d557;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/* 評価別star */
+.star0:after {
+    width: 0;
+}
+.star1:after {
+    width: 16px;
+}
+.star1-5:after {
+    width: 24px;
+}
+.star2:after {
+    width: 32px;
+}
+.star2-5:after {
+    width: 40px;
+}
+.star3:after {
+    width: 48px;
+}
+.star3-5:after {
+    width: 56px;
+}
+.star4:after {
+    width: 64px;
+}
+.star4-5:after {
+    width: 72px;
+}
+.star5:after {
+    width: 80px;
+}
+
+/* skill-text */
+/* .skill-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+} */
+
+@media (min-width:768px) {
+    .skill-text {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+}
+
+/* contact */
+.contact-text {
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* contact-form */
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (min-width:768px) {
+    .contact-form {
+        width: 50%;
+    }
+}
+
+.contact-form p {
+    font-size: 1.4rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #379da8;
+    background: rgba(231, 213, 88, 0.3);
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-buttons input {
+    display: inline-block;
+    width: 150px;
+    margin: 0 10px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #379da8;
+    background: #ffffff;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: #379da8;
+    cursor: pointer;
+}
+
+.contact-buttons input[type="submit"] {
+    background: #379da8;
+    color: #ffffff;
+}
+.contact-buttons input[type="submit"]:hover {
+    border: 1px solid #e7d557;
+    background: #e7d557;
+    color: #ffffff;
+    cursor: pointer;
+}

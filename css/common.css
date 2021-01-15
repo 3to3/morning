@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/* body設定*/
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    color: #555555;
+    font-size: 1.4rem;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+/* img共通設定*/
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+/* a共通設定*/
+a {
+    display: inline-block;
+    position: relative;
+}
+
+/* flex設定*/
+.flex {
+    display: flex;
+}
+
+/* marker */
+.marker {
+    font-size: 1.2rem;
+    margin: 5px;
+    padding: 0 3px;
+    background-image: linear-gradient(90deg,#ffffff,#e7d557);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 50%;
+}
+
+/* heading */
+.heading {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+    left: 0;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #ffffff;
+}
+.heading::first-line {
+    color: #379da8;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* デバイス幅768px以上でfont-size変更 */
+@media (min-width:768px) {
+    .heading {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    z-index: 1999;
+    }
+    .heading::first-line {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    }
+}
+
+/* header */
+.header {
+    width: 100%;
+}
+
+/* メニュー */
+.header-inner {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background: #379da8;
+    color: #ffffff;
+    opacity: 0.8;
+    z-index: 2000;
+}
+
+.header-logo {
+    width: 20%;
+    font-size: 3.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.sitelogo {
+    font-family: 'Cabin Sketch', cursive;
+}
+
+/* モバイル用ナビ */
+.gnav--mb {
+    display: block;
+    opacity: 0;
+}
+/* デバイス幅768px以上で非表示 */
+@media (min-width:768px) {
+    .gnav--mb {
+        display: none;
+    }
+}
+
+/* PC用ナビ */
+.gnav--pc {
+    display: none;
+}
+/* デバイス幅768px以上で表示 */
+@media (min-width:768px) {
+    .gnav--pc {
+        display: block;
+        width: 80%;
+    }
+}
+
+/* gnavのli設定*/
+.gnav-item {
+    width: 20%;
+    height: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.gnav-item a {
+    display: block;
+    position: relative;
+    padding: 16px 12px;
+}
+
+/* a:hover設定*/
+.gnav-item a::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -3px;
+    width: 50%;
+    height: 4px;
+    border-radius: 2px;
+    background: #e7d557;
+    transform: scale(0,1);
+    transition: .3s;
+}
+.gnav-item a:hover::after {
+    transform: scale(1);
+}
+.gnav-item a:hover {
+    color: #e7d557;
+}
+
+/* 通常は.hover非表示 */
+.gnav-item a .hover{
+    display: none;
+}
+
+/* hoverしたらnomalを非表示にする */
+.gnav-item a:hover .nomal {
+    display: none;
+}
+
+/* hoverしたらhoverを表示する */
+.gnav-item a:hover .hover {
+    display: inline;
+}
+
+/* aに.currentがあるとき*/
+.gnav-item a.current{
+    color: #e7d557;
+}
+.gnav-item a.current::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -3px;
+    width: 50%;
+    height: 4px;
+    border-radius: 2px;
+    background: #e7d557;
+    transform: scale(1);
+    transition: .3s;
+}
+
+/* .currentがあるときhover時と同様の表示にする */
+.gnav-item a.current .nomal {
+    display: none;
+}
+.gnav-item a.current .hover {
+    display: inline;
+}
+
+/* main */
+.main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/* contents */
+.contents {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 30px;
+    padding: 0 40px;
+    background: #ffffff;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    max-width: 100%;
+    height: 60px;
+    padding: 12px 0;
+    background: #379da8;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+/* TOPへもどるボタン */
+#pagetop {
+    position: fixed;
+    bottom: 0px;
+    right: 30px;
+}
